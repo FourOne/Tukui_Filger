@@ -25,9 +25,9 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
 
-			-- Lifebloom/Blühendes Leben
+			-- Lifebloom/BlÃ¼hendes Leben
 			{ spellID = 33763, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Rejuvenation/Verjüngung
+			-- Rejuvenation/VerjÃ¼ngung
 			{ spellID = 774, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Regrowth/Nachwachsen
 			{ spellID = 8936, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -42,9 +42,9 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
 
-			-- Lifebloom/Blühendes Leben
+			-- Lifebloom/BlÃ¼hendes Leben
 			{ spellID = 33763, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			-- Rejuvenation/Verjüngung
+			-- Rejuvenation/VerjÃ¼ngung
 			{ spellID = 774, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Regrowth/Nachwachsen
 			{ spellID = 8936, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
@@ -64,9 +64,9 @@ Filger_Spells = {
 			{ spellID = 48517, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Shooting Stars/Sternschnuppen
 			{ spellID = 93400, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Savage Roar/Wildes Brüllen
+			-- Savage Roar/Wildes BrÃ¼llen
 			{ spellID = 52610, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Survival Instincts/Überlebensinstinkte
+			-- Survival Instincts/Ãœberlebensinstinkte
 			{ spellID = 61336, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Tree of Life/Baum des Lebens
 			{ spellID = 33891, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -106,7 +106,7 @@ Filger_Spells = {
 			{ spellID = 9007, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Mangle (Cat)/Zerfleischen (Katze)
 			{ spellID = 33876, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Mangle (Bear)/Zerfleischen (Bär)
+			-- Mangle (Bear)/Zerfleischen (BÃ¤r)
 			{ spellID = 33878, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Earth and Moon/Erde und Mond
 			{ spellID = 48506, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
@@ -145,7 +145,7 @@ Filger_Spells = {
 			--{ spellID = 6150, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Master Tactician
 			{ spellID = 34837, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Improved Steady Shot/Verbesserter zuverlässiger Schuss
+			-- Improved Steady Shot/Verbesserter zuverlÃ¤ssiger Schuss
 			{ spellID = 53224, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Expose Weakness
 			--{ spellID = 34503, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -200,7 +200,7 @@ Filger_Spells = {
 
 			-- Mend Pet/Tier heilen
 			{ spellID = 136, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
-			-- Feed Pet/Tier füttern
+			-- Feed Pet/Tier fÃ¼ttern
 			{ spellID = 6991, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
 		},
 	},
@@ -479,7 +479,7 @@ Filger_Spells = {
 			{ spellID = 41637, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Guardian Spirit/Schutzgeist
 			{ spellID = 47788, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Pain Suppression/Schmerzunterdrückung
+			-- Pain Suppression/SchmerzunterdrÃ¼ckung
 			{ spellID = 33206, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Power Word: Shield/Machtwort: Schild
 			{ spellID = 17, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -503,7 +503,7 @@ Filger_Spells = {
 			{ spellID = 41637, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Guardian Spirit/Schutzgeist
 			{ spellID = 47788, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
-			-- Pain Suppression/Schmerzunterdrückung
+			-- Pain Suppression/SchmerzunterdrÃ¼ckung
 			{ spellID = 33206, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Power Word: Shield/Machtwort: Schild
 			{ spellID = 17, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
@@ -736,9 +736,9 @@ Filger_Spells = {
 
 			-- Unholy Force/Unheilige Kraft
 			{ spellID = 67383, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Desolation/Verwüstung
+			-- Desolation/VerwÃ¼stung
 			--{ spellID = 66817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Unholy Strength/Unheilige Stärke
+			-- Unholy Strength/Unheilige StÃ¤rke
 			{ spellID = 53365, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Unholy Might/Unheilige Macht
 			{ spellID = 67117, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -762,7 +762,7 @@ Filger_Spells = {
 			{ spellID = 59921, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Unholy Blight/Unheilige Verseuchung
 			{ spellID = 49194, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Summon Gargoyle/Gargoyle beschwören
+			-- Summon Gargoyle/Gargoyle beschwÃ¶ren
 			{ spellID = 49206, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 		},
 	},
@@ -826,22 +826,22 @@ Filger_Spells = {
 			{ spellID = 71572, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Cultivated Power/Kultivierte Macht
 			{ spellID = 71570, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Invigorated/Gestärkt
+			-- Invigorated/GestÃ¤rkt
 			{ spellID = 71577, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Invigorated/Gestärkt
+			-- Invigorated/GestÃ¤rkt
 			{ spellID = 71575, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Revitalized/Revitalisiert
 			{ spellID = 71584, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Rage of the Fallen/Zorn der Gefallenen
 			{ spellID = 71396, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hardened Skin/Gehärtete Haut
+			-- Hardened Skin/GehÃ¤rtete Haut
 			{ spellID = 71586, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Elusive Power/Flüchtige Macht
+			-- Elusive Power/FlÃ¼chtige Macht
 			{ spellID = 71579, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
 			-- Frostforged Champion/Frostgeschmiedeter Champion
 			{ spellID = 72412, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Chilling Knowledge/Kühlendes Wissen
+			-- Chilling Knowledge/KÃ¼hlendes Wissen
 			{ spellID = 72418, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Frostforged Sage/Frostgeschmiedeter Weiser
 			{ spellID = 72416, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -1105,13 +1105,13 @@ Filger_Spells = {
 			{ spellID = 70352, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Pact of the Darkfallen/Pakt der Sinistren (Bloodqueen Lana'thel)
 			{ spellID = 71340, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Swarming Shadows/Schwärmende Schatten (Bloodqueen Lana'thel)
+			-- Swarming Shadows/SchwÃ¤rmende Schatten (Bloodqueen Lana'thel)
 			{ spellID = 71861, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Essence of the Blood Queen/Essenz der Blutkönigin (Bloodqueen Lana'thel)
+			-- Essence of the Blood Queen/Essenz der BlutkÃ¶nigin (Bloodqueen Lana'thel)
 			{ spellID = 71473, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Frost Bomb/Frostbombe (Sindragosa)
 			{ spellID = 71053, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Instability/Instabilität (Sindragosa)
+			-- Instability/InstabilitÃ¤t (Sindragosa)
 			{ spellID = 69766, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Unchained Magic/Entfesselte Magie (Sindragosa)
 			{ spellID = 69762, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
