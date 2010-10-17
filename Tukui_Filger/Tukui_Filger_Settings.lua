@@ -1,5 +1,5 @@
 Filger_Settings = {
-	configmode = true,
+	configmode = false,
 }
 
 --[[ CD-Example
