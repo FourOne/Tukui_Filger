@@ -576,6 +576,8 @@ Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
 
+			--Devious Minds/Teuflische Absichten
+			{ spellID = 70840, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Improved Soul Fire
 			{ spellID = 85114, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Molten Core
@@ -776,60 +778,34 @@ Filger_Spells = {
 
 			-- Eyes of Twilight/Augen des Zwielichts
 			{ spellID = 75495, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Eyes of Twilight/Augen des Zwielichts
-			{ spellID = 75490, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Piercing Twilight/Durchbohrendes Zwielicht
 			{ spellID = 75456, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Piercing Twilight/Durchbohrendes Zwielicht
-			{ spellID = 75458, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Twilight Flames/Zwielichtflammen
 			{ spellID = 75473, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Twilight Flames/Zwielichtflammen
-			{ spellID = 75466, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Scaly Nimbleness/Schuppige Gewandtheit
 			{ spellID = 75480, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Scaly Nimbleness/Schuppige Gewandtheit
-			{ spellID = 75477, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Surge of Power/Kraftsog
 			{ spellID = 71644, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Surge of Power/Kraftsog
-			{ spellID = 71601, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Thick Skin/Dicke Haut
 			{ spellID = 71639, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Thick Skin/Dicke Haut
-			{ spellID = 71633, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Siphoned Power/Entzogene Kraft
 			{ spellID = 71636, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Siphoned Power/Entzogene Kraft
-			{ spellID = 71605, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Aegis of Dalaran/Aegis von Dalaran
 			{ spellID = 71638, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Aegis of Dalaran/Aegis von Dalaran
-			{ spellID = 71635, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Speed of the Vrykul/Geschwindigkeit der Vrykul
 			{ spellID = 71560, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Speed of the Vrykul/Geschwindigkeit der Vrykul
-			{ spellID = 71492, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Power of the Taunka/Macht der Taunka
 			{ spellID = 71558, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Power of the Taunka/Macht der Taunka
-			{ spellID = 71486, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Agility of the Vrykul/Beweglichkeit der Vrykul
 			{ spellID = 71556, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Agility of the Vrykul/Beweglichkeit der Vrykul
-			{ spellID = 71485, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Mote of Anger/Partikel des Zorns
+			{ spellID = 71432, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Icy Rage/Eisige Wut
 			{ spellID = 71541, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Icy Rage/Eisige Wut
-			{ spellID = 71401, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Cultivated Power/Kultivierte Macht
 			{ spellID = 71572, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Cultivated Power/Kultivierte Macht
-			{ spellID = 71570, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Invigorated/Gestärkt
 			{ spellID = 71577, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Invigorated/Gestärkt
-			{ spellID = 71575, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Revitalized/Revitalisiert
 			{ spellID = 71584, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Rage of the Fallen/Zorn der Gefallenen
@@ -838,6 +814,8 @@ Filger_Spells = {
 			{ spellID = 71586, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Elusive Power/Flüchtige Macht
 			{ spellID = 71579, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Shard of Flame/Flammensplitter
+			{ spellID = 67759, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
 			-- Frostforged Champion/Frostgeschmiedeter Champion
 			{ spellID = 72412, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -848,17 +826,21 @@ Filger_Spells = {
 			-- Frostforged Defender/Frostgeschmiedeter Verteidiger
 			{ spellID = 72414, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
-			-- Hyperspeed Accelerators
+			-- Hyperspeed Accelerators/Hypergeschwindigkeitsbeschleuniger
 			{ spellID = 54999, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
-			-- Potion of Speed
+			-- Speed/Geschwindigkeit
 			{ spellID = 53908, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Potion of Wild Magic
+			-- Wild Magic/Wilde Magie
 			{ spellID = 53909, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
-			-- Bloodlust
+			--Tricks of the Trade/Schurkenhandel
+			{ spellID = 57934, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
+			--Power Infusion/Seele der Macht
+			{ spellID = 10060, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Bloodlust/Kampfrausch
 			{ spellID = 2825, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
-			-- Heroism
+			-- Heroism/Heldentum
 			{ spellID = 32182, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
 		},
 		{
@@ -1099,6 +1081,8 @@ Filger_Spells = {
 			{ spellID = 71224, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Unbound Plague/Entfesselte Seuche (Professor Putricide)
 			{ spellID = 72856, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			--Plague Sickness/Seuchenkrankheit (Professor Putricide)
+			{ spellID = 73117, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Gas Variable/Gasvariable (Professor Putricide)
 			{ spellID = 70353, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Ooze Variable/Schlammvariable (Professor Putricide)
@@ -1119,6 +1103,10 @@ Filger_Spells = {
 			{ spellID = 70128, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Necrotic Plague/Nekrotische Seuche (Arthas - The Lich King)
 			{ spellID = 73912, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			--Fiery Combustion/Feurige Einäscherung (Halion)
+			{ spellID = 74562, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			--Soul Consumption/Seelenverzehrung (Halion)
+			{ spellID = 74792, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 		},
 		{
 			Name = "PVP_T_BUFF_ICON",
