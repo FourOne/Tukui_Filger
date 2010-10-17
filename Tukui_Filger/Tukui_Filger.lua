@@ -108,7 +108,11 @@ function Update(self)
 					bar.statusbar:SetHeight(TukuiDB.Scale(value.data.size - 10));
 					bar.statusbar:SetStatusBarTexture(TukuiCF["media"].normTex);
 					bar.statusbar:SetStatusBarColor(classcolor.r, classcolor.g, classcolor.b, 1);
-					bar.statusbar:SetPoint("BOTTOMLEFT", bar, "BOTTOMRIGHT", TukuiDB.Scale(5), TukuiDB.Scale(2));
+					if ( self.IconSide == "LEFT" ) then
+						bar.statusbar:SetPoint("BOTTOMLEFT", bar, "BOTTOMRIGHT", 6, 2);
+					elseif ( self.IconSide == "RIGHT" ) then
+						bar.statusbar:SetPoint("BOTTOMRIGHT", bar, "BOTTOMLEFT", -6, 2);
+					end
 				end
 				bar.statusbar:SetMinMaxValues(0, 1);
 				bar.statusbar:SetValue(0);
@@ -202,7 +206,7 @@ end
 
 local function OnEvent(self, event, ...)
 	local unit = ...;
-	if ( ( unit == "target" or unit == "player" ) or event == "PLAYER_TARGET_CHANGED" or event == "PLAYER_ENTERING_WORLD" or event == "SPELL_UPDATE_COOLDOWN" ) then
+	if ( ( unit == "target" or unit == "player" or unit == "pet" or unit == "focus" ) or event == "PLAYER_TARGET_CHANGED" or event == "PLAYER_ENTERING_WORLD" or event == "SPELL_UPDATE_COOLDOWN" ) then
 		local data, name, rank, icon, count, debuffType, duration, expirationTime, caster, isStealable, start, enabled, slotLink, spn;
 		local id = self.Id;
 		for i=1, #Filger_Spells[class][id], 1 do
@@ -272,6 +276,7 @@ if (Filger_Spells and Filger_Spells[class]) then
 		frame.Id = i;
 		frame.Name = data.Name;
 		frame.Direction = data.Direction or "DOWN";
+		frame.IconSide = data.IconSide or "LEFT";
 		frame.Interval = data.Interval or 3;
 		frame.Mode = data.Mode or "ICON";
 		frame.setPoint = data.setPoint or "CENTER";
