@@ -1,5 +1,5 @@
 Filger_Settings = {
-	configmode = false,
+	configmode = falsea,
 }
 
 --[[ CD-Example
@@ -104,10 +104,8 @@ Filger_Spells = {
 			{ spellID = 33745, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Pounce Bleed/Anspringblutung
 			{ spellID = 9007, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Mangle (Cat)/Zerfleischen (Katze)
+			-- Mangle/Zerfleischen
 			{ spellID = 33876, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Mangle (Bear)/Zerfleischen (Bär)
-			{ spellID = 33878, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Earth and Moon/Erde und Mond
 			{ spellID = 48506, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Faerie Fire/Feenfeuer
@@ -153,6 +151,10 @@ Filger_Spells = {
 			{ spellID = 3045, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Call of the Wild
 			{ spellID = 53434, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Mend Pet/Tier heilen
+			{ spellID = 136, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
+			-- Feed Pet/Tier füttern
+			{ spellID = 6991, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -189,19 +191,6 @@ Filger_Spells = {
 			{ spellID = 19386, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 			-- Silencing Shot
 			{ spellID = 34490, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
-		},
-		{
-			Name = "PET_ICON",
-			Direction = "UP",
-			Interval = 4,
-			Opacity = 1,
-			Mode = "ICON",
-			setPoint = { "CENTER", UIParent, 0, -300 },
-
-			-- Mend Pet/Tier heilen
-			{ spellID = 136, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
-			-- Feed Pet/Tier füttern
-			{ spellID = 6991, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
 		},
 	},
 	["MAGE"] = {
@@ -770,7 +759,7 @@ Filger_Spells = {
 	},
 	["ALL"] = {
 		{
-			Name = "ITEM_P_BUFF_ICON",
+			Name = "SPECIAL_P_BUFF_ICON",
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",

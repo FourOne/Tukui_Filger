@@ -4,7 +4,7 @@
 ## Author: Nils Ruesch
 ## Editor: FourOne
 ## Credits: Nils Ruesch, Shestak, Affli, Garagar, hidekki
-## Version: 2.23
+## Version: 2.24
 ## RequiredDeps: Tukui
 
 Tukui_Filger_Settings.lua
