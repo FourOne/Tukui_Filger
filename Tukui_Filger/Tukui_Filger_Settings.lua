@@ -1,5 +1,7 @@
-Filger_Settings = {
-	configmode = falsea,
+local _, ns = ...
+
+ns.Filger_Settings = {
+	configmode = false,
 }
 
 --[[ CD-Example
@@ -15,7 +17,7 @@ Filger_Settings = {
 		},
 ]]
 
-Filger_Spells = {
+ns.Filger_Spells = {
 	["DRUID"] = {
 		{
 			Name = "P_BUFF_ICON",
