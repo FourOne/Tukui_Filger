@@ -1,15 +1,17 @@
 --[[
-	
+
 	Filger
 	Copyright (c) 2009, Nils Ruesch
 	All rights reserved.
 	Modded by Affli@RU-HowlingFjord
-	
+
 ]]
 
-local font_size = 14
+local _, ns = ...
+local f_s = ns.Filger_Settings;
+local Filger_Spells = ns.Filger_Spells;
 
-local f_s = Filger_Settings;
+local font_size = 14
 
 local class = select(2, UnitClass("player"));
 local classcolor = RAID_CLASS_COLORS[class];
@@ -85,12 +87,12 @@ function Update(self)
 				bar.icon:SetPoint("BOTTOMRIGHT", TukuiDB.Scale(-2), TukuiDB.Scale(2))
 				bar.icon:SetTexCoord(0.1, 0.9, 0.1, 0.9);
 			end
-			
+
 			if (self.Mode == "ICON") then
 				bar.cooldown = CreateFrame("Cooldown", "$parentCD", bar, "CooldownFrameTemplate");
 				bar.cooldown:SetAllPoints(bar.icon);
 				bar.cooldown:SetReverse();
-				
+
 				if (bar.count) then
 					bar.count = _G[bar.count:GetName()]
 				else
@@ -116,7 +118,7 @@ function Update(self)
 				end
 				bar.statusbar:SetMinMaxValues(0, 1);
 				bar.statusbar:SetValue(0);
-				
+
 				if (bar.bg)then
 					bar.bg = _G[bar.bg:GetName()]
 				else
@@ -126,7 +128,7 @@ function Update(self)
 					bar.bg:SetFrameStrata("BACKGROUND")
 					TukuiDB.SetTemplate(bar.bg)
 				end
-				
+
 				if (bar.background)then
 					bar.background = _G[bar.background:GetName()]
 				else
@@ -135,7 +137,7 @@ function Update(self)
 					bar.background:SetTexture(TukuiCF["media"].normTex);
 					bar.background:SetVertexColor(0, 0, 0, 0.5);
 				end
-				
+
 				if (bar.time)then
 					bar.time = _G[bar.time:GetName()]
 				else			
@@ -143,7 +145,7 @@ function Update(self)
 					bar.time:SetFont(TukuiCF["media"].uffont, font_size, "OUTLINE");
 					bar.time:SetPoint("RIGHT", bar.statusbar, TukuiDB.Scale(0), 0);
 				end
-				
+
 				if (bar.count) then
 					bar.count = _G[bar.count:GetName()]
 				else
@@ -152,7 +154,7 @@ function Update(self)
 					bar.count:SetPoint("BOTTOMRIGHT", TukuiDB.Scale(1), TukuiDB.Scale(1));
 					bar.count:SetJustifyH("CENTER");
 				end
-				
+
 				if (bar.spellname)then
 					bar.spellname = _G[bar.spellname:GetName()]
 				else
@@ -165,9 +167,9 @@ function Update(self)
 			end
 			tinsert(bars[id], bar);
 		end
-		
+
 		bar.spellName = GetSpellInfo( value.data.spellID or value.data.slotID );
-		
+
 		bar.icon:SetTexture(value.icon);
 		bar.count:SetText(value.count > 1 and value.count or "");
 		if (self.Mode == "BAR") then
@@ -199,7 +201,7 @@ function Update(self)
 				bar:SetScript("OnUpdate", nil);
 			end
 		end
-		
+
 		bar:Show();
 	end
 end
@@ -271,7 +273,7 @@ if (Filger_Spells and Filger_Spells[class]) then
 	local data, frame;
 	for i = 1, #Filger_Spells[class], 1 do
 		data = Filger_Spells[class][i];
-		
+
 		frame = CreateFrame("Frame", "FilgerAnchor"..i, UIParent);
 		frame.Id = i;
 		frame.Name = data.Name;
