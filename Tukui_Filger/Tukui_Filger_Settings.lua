@@ -818,7 +818,7 @@ ns.Filger_Spells = {
 			{ spellID = 72414, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
 			-- Hyperspeed Accelerators/Hypergeschwindigkeitsbeschleuniger
-			{ spellID = 54999, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 54758, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
 			-- Speed/Geschwindigkeit
 			{ spellID = 53908, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
