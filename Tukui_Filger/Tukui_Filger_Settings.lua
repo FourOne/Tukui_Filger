@@ -154,9 +154,9 @@ ns.Filger_Spells = {
 			-- Call of the Wild
 			{ spellID = 53434, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Mend Pet/Tier heilen
-			{ spellID = 136, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
+			{ spellID = 136, size = 47, unitId = "pet", caster = "player", filter = "BUFF" },
 			-- Feed Pet/Tier füttern
-			{ spellID = 6991, size = 32, unitId = "pet", caster = "player", filter = "BUFF" },
+			{ spellID = 6991, size = 47, unitId = "pet", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
