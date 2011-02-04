@@ -3,15 +3,14 @@
 	Filger
 	Copyright (c) 2009, Nils Ruesch
 	All rights reserved.
-	Modded by Affli@RU-HowlingFjord
 
 ]]
+
+local T, C, L = unpack(Tukui) -- Import: T - functions, constants, variables; C - config; L - locales
 
 local _, ns = ...
 local f_s = ns.Filger_Settings;
 local Filger_Spells = ns.Filger_Spells;
-
-local font_size = 14
 
 local class = select(2, UnitClass("player"));
 local classcolor = RAID_CLASS_COLORS[class];
@@ -83,22 +82,22 @@ function Update(self)
 				bar.icon = _G[bar.icon:GetName()]
 			else
 				bar.icon = bar:CreateTexture("$parentIcon", "ARTWORK");
-				bar.icon:SetPoint("TOPLEFT", TukuiDB.Scale(2), TukuiDB.Scale(-2))
-				bar.icon:SetPoint("BOTTOMRIGHT", TukuiDB.Scale(-2), TukuiDB.Scale(2))
+				bar.icon:SetPoint("TOPLEFT", T.Scale(2), T.Scale(-2))
+				bar.icon:SetPoint("BOTTOMRIGHT", T.Scale(-2), T.Scale(2))
 				bar.icon:SetTexCoord(0.1, 0.9, 0.1, 0.9);
 			end
-
+			
 			if (self.Mode == "ICON") then
 				bar.cooldown = CreateFrame("Cooldown", "$parentCD", bar, "CooldownFrameTemplate");
 				bar.cooldown:SetAllPoints(bar.icon);
 				bar.cooldown:SetReverse();
-
+				
 				if (bar.count) then
 					bar.count = _G[bar.count:GetName()]
 				else
 					bar.count = bar:CreateFontString("$parentCount", "OVERLAY");
-					bar.count:SetFont(TukuiCF["media"].uffont, font_size, "OUTLINE");
-					bar.count:SetPoint("BOTTOMRIGHT", TukuiDB.Scale(1), TukuiDB.Scale(-1));
+					bar.count:SetFont(C["media"].uffont, 14, "OUTLINE");
+					bar.count:SetPoint("BOTTOMRIGHT", T.Scale(1), T.Scale(-1));
 					bar.count:SetJustifyH("CENTER");
 				end
 			else
@@ -106,9 +105,9 @@ function Update(self)
 					bar.statusbar = _G[bar.statusbar:GetName()]
 				else
 					bar.statusbar = CreateFrame("StatusBar", "$parentStatusBar", bar);
-					bar.statusbar:SetWidth(TukuiDB.Scale(value.data.barWidth - 2));
-					bar.statusbar:SetHeight(TukuiDB.Scale(value.data.size - 10));
-					bar.statusbar:SetStatusBarTexture(TukuiCF["media"].normTex);
+					bar.statusbar:SetWidth(T.Scale(value.data.barWidth - 2));
+					bar.statusbar:SetHeight(T.Scale(value.data.size - 10));
+					bar.statusbar:SetStatusBarTexture(C["media"].normTex);
 					bar.statusbar:SetStatusBarColor(classcolor.r, classcolor.g, classcolor.b, 1);
 					if ( self.IconSide == "LEFT" ) then
 						bar.statusbar:SetPoint("BOTTOMLEFT", bar, "BOTTOMRIGHT", 6, 2);
@@ -118,58 +117,58 @@ function Update(self)
 				end
 				bar.statusbar:SetMinMaxValues(0, 1);
 				bar.statusbar:SetValue(0);
-
+				
 				if (bar.bg)then
 					bar.bg = _G[bar.bg:GetName()]
 				else
 					bar.bg = CreateFrame("Frame","$parentBG", bar.statusbar)
-					bar.bg:SetPoint("TOPLEFT", TukuiDB.Scale(-2), TukuiDB.Scale(2))
-					bar.bg:SetPoint("BOTTOMRIGHT", TukuiDB.Scale(2), TukuiDB.Scale(-2))
+					bar.bg:SetPoint("TOPLEFT", T.Scale(-2), T.Scale(2))
+					bar.bg:SetPoint("BOTTOMRIGHT", T.Scale(2), T.Scale(-2))
 					bar.bg:SetFrameStrata("BACKGROUND")
 					TukuiDB.SetTemplate(bar.bg)
 				end
-
+				
 				if (bar.background)then
 					bar.background = _G[bar.background:GetName()]
 				else
 					bar.background = bar.statusbar:CreateTexture(nil, "BACKGROUND");
 					bar.background:SetAllPoints();
-					bar.background:SetTexture(TukuiCF["media"].normTex);
+					bar.background:SetTexture(C["media"].normTex);
 					bar.background:SetVertexColor(0, 0, 0, 0.5);
 				end
-
+				
 				if (bar.time)then
 					bar.time = _G[bar.time:GetName()]
 				else			
 					bar.time = bar.statusbar:CreateFontString("$parentTime", "ARTWORK");
-					bar.time:SetFont(TukuiCF["media"].uffont, font_size, "OUTLINE");
-					bar.time:SetPoint("RIGHT", bar.statusbar, TukuiDB.Scale(0), 0);
+					bar.time:SetFont(C["media"].uffont, 14, "OUTLINE");
+					bar.time:SetPoint("RIGHT", bar.statusbar, T.Scale(0), 0);
 				end
-
+				
 				if (bar.count) then
 					bar.count = _G[bar.count:GetName()]
 				else
 					bar.count = bar:CreateFontString("$parentCount", "ARTWORK");
-					bar.count:SetFont(TukuiCF["media"].uffont, font_size, "OUTLINE");
-					bar.count:SetPoint("BOTTOMRIGHT", TukuiDB.Scale(1), TukuiDB.Scale(1));
+					bar.count:SetFont(C["media"].uffont, 14, "OUTLINE");
+					bar.count:SetPoint("BOTTOMRIGHT", T.Scale(1), T.Scale(1));
 					bar.count:SetJustifyH("CENTER");
 				end
-
+				
 				if (bar.spellname)then
 					bar.spellname = _G[bar.spellname:GetName()]
 				else
 					bar.spellname = bar.statusbar:CreateFontString("$parentSpellName", "ARTWORK");
-					bar.spellname:SetFont(TukuiCF["media"].uffont, font_size, "OUTLINE");
-					bar.spellname:SetPoint("LEFT", bar.statusbar, TukuiDB.Scale(2), 0);
+					bar.spellname:SetFont(C["media"].uffont, 14, "OUTLINE");
+					bar.spellname:SetPoint("LEFT", bar.statusbar, T.Scale(2), 0);
 					bar.spellname:SetPoint("RIGHT", bar.time, "LEFT");
 					bar.spellname:SetJustifyH("LEFT");
 				end
 			end
 			tinsert(bars[id], bar);
 		end
-
+		
 		bar.spellName = GetSpellInfo( value.data.spellID or value.data.slotID );
-
+		
 		bar.icon:SetTexture(value.icon);
 		bar.count:SetText(value.count > 1 and value.count or "");
 		if (self.Mode == "BAR") then
@@ -201,7 +200,7 @@ function Update(self)
 				bar:SetScript("OnUpdate", nil);
 			end
 		end
-
+		
 		bar:Show();
 	end
 end
@@ -273,7 +272,7 @@ if (Filger_Spells and Filger_Spells[class]) then
 	local data, frame;
 	for i = 1, #Filger_Spells[class], 1 do
 		data = Filger_Spells[class][i];
-
+		
 		frame = CreateFrame("Frame", "FilgerAnchor"..i, UIParent);
 		frame.Id = i;
 		frame.Name = data.Name;

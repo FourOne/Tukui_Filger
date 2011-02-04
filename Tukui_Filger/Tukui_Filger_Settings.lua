@@ -128,6 +128,20 @@ ns.Filger_Spells = {
 			-- Cyclone/Wirbelsturm
 			{ spellID = 33786, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
+		
+		{
+			Name = "CD/HEAL",
+			Direction = "UP",
+			IconSide = "RIGHT",
+			Interval = 4,
+			Mode = "BAR",
+			setPoint = { "RIGHT", UIParent, "CENTER", -160, 100 },
+
+			-- Swiftmend/Rasche Heilung
+			{ spellID = 18562, size = 32, barWidth = 200, filter = "CD" },
+			-- Wild Growth/Wildwuchs
+			{ spellID = 48438, size = 32, barWidth = 200, filter = "CD" },
+		},
 	},
 	["HUNTER"] = {
 		{
@@ -727,20 +741,26 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
 
+			-- Blood Shield/Blutschild
+			{ spellID = 77513, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Unholy Force/Unheilige Kraft
 			{ spellID = 67383, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Desolation/Verwüstung
-			--{ spellID = 66817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Unholy Strength/Unheilige Stärke
 			{ spellID = 53365, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Unholy Might/Unheilige Macht
 			{ spellID = 67117, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Dancing Rune Weapon/Tanzende Runenwaffe
 			{ spellID = 49028, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Icebound Fortitude/Eisige Gegenwehr
+			{ spellID = 48792, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Anti-Magic Shell/Antimagische Hülle
+			{ spellID = 48707, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Killing machine
 			{ spellID = 51124, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Freezing fog
 			{ spellID = 59052, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Bone Shield/Knochenschild
+			{ spellID = 49222, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -749,6 +769,8 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
 
+			-- Strangulate/Strangulieren
+			{ spellID = 47476, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Blood Plague/Blutseuche
 			{ spellID = 59879, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Frost Fever/Frostfieber
@@ -757,6 +779,8 @@ ns.Filger_Spells = {
 			{ spellID = 49194, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Summon Gargoyle/Gargoyle beschwören
 			{ spellID = 49206, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Death and Decay/Tod und Verfall
+			{ spellID = 43265, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 		},
 	},
 	["ALL"] = {
@@ -767,58 +791,17 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -160, -139 },
 
-			-- Eyes of Twilight/Augen des Zwielichts
-			{ spellID = 75495, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Piercing Twilight/Durchbohrendes Zwielicht
-			{ spellID = 75456, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Twilight Flames/Zwielichtflammen
-			{ spellID = 75473, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Scaly Nimbleness/Schuppige Gewandtheit
-			{ spellID = 75480, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Surge of Power/Kraftsog
-			{ spellID = 71644, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Thick Skin/Dicke Haut
-			{ spellID = 71639, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Siphoned Power/Entzogene Kraft
-			{ spellID = 71636, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Aegis of Dalaran/Aegis von Dalaran
-			{ spellID = 71638, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Speed of the Vrykul/Geschwindigkeit der Vrykul
-			{ spellID = 71560, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Power of the Taunka/Macht der Taunka
-			{ spellID = 71558, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Agility of the Vrykul/Beweglichkeit der Vrykul
-			{ spellID = 71556, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Mote of Anger/Partikel des Zorns
-			{ spellID = 71432, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Icy Rage/Eisige Wut
-			{ spellID = 71541, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Cultivated Power/Kultivierte Macht
-			{ spellID = 71572, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Invigorated/Gestärkt
-			{ spellID = 71577, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Revitalized/Revitalisiert
-			{ spellID = 71584, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Rage of the Fallen/Zorn der Gefallenen
-			{ spellID = 71396, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Hardened Skin/Gehärtete Haut
-			{ spellID = 71586, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Elusive Power/Flüchtige Macht
-			{ spellID = 71579, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Shard of Flame/Flammensplitter
-			{ spellID = 67759, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-
-			-- Frostforged Champion/Frostgeschmiedeter Champion
-			{ spellID = 72412, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Chilling Knowledge/Kühlendes Wissen
-			{ spellID = 72418, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Frostforged Sage/Frostgeschmiedeter Weiser
-			{ spellID = 72416, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Frostforged Defender/Frostgeschmiedeter Verteidiger
-			{ spellID = 72414, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Geisterstunde/Witching Hour
+			{ spellID = 90887, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Erkenntnis des Herzens/Heart's Revelation
+			{ spellID = 91027, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Richturteil des Herzens/Heart's Judgement
+			{ spellID = 91041, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
 			-- Hyperspeed Accelerators/Hypergeschwindigkeitsbeschleuniger
 			{ spellID = 54758, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Synapse Springs/Synapsenfedern
+			{ spellID = 82175, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
 			-- Speed/Geschwindigkeit
 			{ spellID = 53908, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -1063,41 +1046,61 @@ ns.Filger_Spells = {
 			-- War Stomp
 			{ spellID = 20549, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- ICC
-			-- Mark of the Fallen Champion/Mal des gefallenen Champions (Deathbringer Saurfang)
-			{ spellID = 72293, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Inoculated/Geimpft (Festergut)
-			{ spellID = 72103, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Mutated Infection/Mutierte Infektion (Rotface)
-			{ spellID = 71224, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Unbound Plague/Entfesselte Seuche (Professor Putricide)
-			{ spellID = 72856, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			--Plague Sickness/Seuchenkrankheit (Professor Putricide)
-			{ spellID = 73117, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Gas Variable/Gasvariable (Professor Putricide)
-			{ spellID = 70353, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Ooze Variable/Schlammvariable (Professor Putricide)
-			{ spellID = 70352, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Pact of the Darkfallen/Pakt der Sinistren (Bloodqueen Lana'thel)
-			{ spellID = 71340, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Swarming Shadows/Schwärmende Schatten (Bloodqueen Lana'thel)
-			{ spellID = 71861, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Essence of the Blood Queen/Essenz der Blutkönigin (Bloodqueen Lana'thel)
-			{ spellID = 71473, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Frost Bomb/Frostbombe (Sindragosa)
-			{ spellID = 71053, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Instability/Instabilität (Sindragosa)
-			{ spellID = 69766, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Unchained Magic/Entfesselte Magie (Sindragosa)
-			{ spellID = 69762, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Mystic Buffet/Mystischer Puffer (Sindragosa)
-			{ spellID = 70128, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Necrotic Plague/Nekrotische Seuche (Arthas - The Lich King)
-			{ spellID = 73912, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			--Fiery Combustion/Feurige Einäscherung (Halion)
-			{ spellID = 74562, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			--Soul Consumption/Seelenverzehrung (Halion)
-			{ spellID = 74792, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Baradin Hold(PvP)
+			-- Meteor Slash/Meteorschlag (Argaloth)
+			{ spellID = 88942, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+
+			-- Bastion of Twilight
+			-- Blackout/Blackout (Valiona & Theralion)
+			{ spellID = 92878, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Engulfing Magic/Einhüllende Magie (Valiona & Theralion)
+			{ spellID = 95639, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Waterlogged/Wasserdurchtränkt (Twilight Ascendant Council)
+			{ spellID = 82762, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Burning Blood/Brennendes Blut (Twilight Ascendant Council)
+			{ spellID = 82660, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Heart of Ice/Herz aus Eis (Twilight Ascendant Council)
+			{ spellID = 82665, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Frozen/Gefroren (Twilight Ascendant Council)
+			{ spellID = 92505, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Swirling Winds/Wirbelnde Winde (Twilight Ascendant Council)
+			{ spellID = 83500, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Magnetic Pull/Magnetische Anziehung (Twilight Ascendant Council)
+			{ spellID = 83587, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Corruption: Accelerated/Verderbnis: Beschleunigung (Cho'gall)
+			{ spellID = 81836, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Corruption: Malformation/Verderbnis: Missbildung (Cho'gall)
+			{ spellID = 82125, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Corruption: Absolute/Verderbnis: Vollendet (Cho'gall)
+			{ spellID = 82170, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Corruption: Sickness/Verderbnis: Krankheit (Cho'gall)
+			{ spellID = 81831, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+
+			-- Blackwing Descent
+			-- Constricting Chains/Fesselnde Ketten (Magmaw)
+			{ spellID = 91911, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Parasitic Infection/Parasitäre Infektion (Magmaw)
+			{ spellID = 94679, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Infectious Vomit/Infektiöses Erbrochenes (Magmaw)
+			{ spellID = 91923, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Lightning Conductor (Omnitron Defense System)
+			{ spellID = 91433, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Flash Freeze/Blitzeis (Maloriak)
+			{ spellID = 77699, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Consuming Flames/Verzehrende Flammen (Maloriak)
+			{ spellID = 77786, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Finkle's Mixture/Finkels Mixtur (Chimaeron)
+			{ spellID = 82705, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Shadow Conductor/Schattenleiter (Nefarian)
+			{ spellID = 92053, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+
+			-- Throne of Four Winds
+			-- Wind Chill/Windkühle (Conclave of Wind)
+			{ spellID = 93123, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Static Shock/Statischer Schock (Al'Akir)
+			{ spellID = 87873, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Acid Rain/Säureregen (Al'Akir)
+			{ spellID = 88301, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 		},
 		{
 			Name = "PVP_T_BUFF_ICON",
