@@ -286,6 +286,12 @@ ns.Filger_Spells = {
 			{ spellID = 50227, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Blood Reserve
 			{ spellID = 64568, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Spell Reflection/Zauberreflexion
+			{ spellID = 23920, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Victory Rush/Siegesrausch
+			{ spellID = 34428, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Shield Block/Schildblock
+			{ spellID = 2565, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Last Stand
 			{ spellID = 12975, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Shield Wall
@@ -298,6 +304,10 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
 
+			-- Charge Stun/Sturmangriffsbetäubung
+			{ spellID = 7922, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Shockwave
+			{ spellID = 46968, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Hamstring
 			{ spellID = 1715, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Rend
@@ -1052,17 +1062,17 @@ ns.Filger_Spells = {
 
 			-- Bastion of Twilight
 			-- Blackout/Blackout (Valiona & Theralion)
-			{ spellID = 92878, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 92879, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Engulfing Magic/Einhüllende Magie (Valiona & Theralion)
-			{ spellID = 95639, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 86631, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Waterlogged/Wasserdurchtränkt (Twilight Ascendant Council)
 			{ spellID = 82762, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Burning Blood/Brennendes Blut (Twilight Ascendant Council)
-			{ spellID = 82660, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 82662, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Heart of Ice/Herz aus Eis (Twilight Ascendant Council)
-			{ spellID = 82665, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 82667, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Frozen/Gefroren (Twilight Ascendant Council)
-			{ spellID = 92505, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 92503, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Swirling Winds/Wirbelnde Winde (Twilight Ascendant Council)
 			{ spellID = 83500, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Magnetic Pull/Magnetische Anziehung (Twilight Ascendant Council)
@@ -1074,7 +1084,7 @@ ns.Filger_Spells = {
 			-- Corruption: Absolute/Verderbnis: Vollendet (Cho'gall)
 			{ spellID = 82170, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Corruption: Sickness/Verderbnis: Krankheit (Cho'gall)
-			{ spellID = 81831, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 93200, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
 			-- Blackwing Descent
 			-- Constricting Chains/Fesselnde Ketten (Magmaw)
@@ -1097,10 +1107,12 @@ ns.Filger_Spells = {
 			-- Throne of Four Winds
 			-- Wind Chill/Windkühle (Conclave of Wind)
 			{ spellID = 93123, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Slicing Gale/Schneidender Orkan (Conclave of Wind)
+			{ spellID = 93058, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Static Shock/Statischer Schock (Al'Akir)
 			{ spellID = 87873, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Acid Rain/Säureregen (Al'Akir)
-			{ spellID = 88301, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 93279, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 		},
 		{
 			Name = "PVP_T_BUFF_ICON",
