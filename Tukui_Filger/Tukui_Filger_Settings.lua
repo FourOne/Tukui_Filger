@@ -128,7 +128,7 @@ ns.Filger_Spells = {
 			-- Cyclone/Wirbelsturm
 			{ spellID = 33786, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
-		
+
 		{
 			Name = "CD/HEAL",
 			Direction = "UP",
