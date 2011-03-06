@@ -25,7 +25,7 @@ ns.Filger_Spells = {
 			Interval = 4,
 			Opacity = 1,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
 
 			-- Lifebloom/Blühendes Leben
 			{ spellID = 33763, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -42,7 +42,7 @@ ns.Filger_Spells = {
 			Interval = 4,
 			Opacity = 1,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -146 },
 
 			-- Lifebloom/Blühendes Leben
 			{ spellID = 33763, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
@@ -58,7 +58,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Eclipse (Lunar)/Mondfinsternis
 			{ spellID = 48518, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -84,7 +84,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Hibernate/Winterschlaf
 			{ spellID = 2637, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -119,7 +119,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Hibernate/Winterschlaf
 			{ spellID = 2637, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -135,7 +135,7 @@ ns.Filger_Spells = {
 			IconSide = "RIGHT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, 100 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, 100 },
 
 			-- Swiftmend/Rasche Heilung
 			{ spellID = 18562, size = 32, barWidth = 200, filter = "CD" },
@@ -149,7 +149,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Lock and Load
 			{ spellID = 56342, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -177,7 +177,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Wyvern Sting
 			{ spellID = 19386, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -185,8 +185,8 @@ ns.Filger_Spells = {
 			{ spellID = 34490, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Serpent Sting
 			{ spellID = 1978, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Scorpid Sting
-			--{ spellID = 3043, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Widow Venom/Witwentoxin
+			{ spellID = 82654, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Black Arrow
 			{ spellID = 3674, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Explosive Shot
@@ -201,7 +201,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Wyvern Sting
 			{ spellID = 19386, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -215,7 +215,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Frostbite
 			--{ spellID = 11071, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -239,7 +239,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Polymorph
 			{ spellID = 118, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -264,7 +264,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Polymorph
 			{ spellID = 118, size = 32, barWidth = 191, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -276,7 +276,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Sudden Death
 			{ spellID = 52437, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -302,7 +302,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Charge Stun/Sturmangriffsbetäubung
 			{ spellID = 7922, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -336,7 +336,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
 
 			-- Earth Shield/Erdschild
 			{ spellID = 974, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -352,7 +352,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -146 },
 
 			-- Earth Shield/Erdschild
 			{ spellID = 974, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
@@ -364,7 +364,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Maelstorm Weapon
 			{ spellID = 53817, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -382,7 +382,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Hex
 			{ spellID = 51514, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -401,7 +401,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Hex
 			{ spellID = 51514, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -414,7 +414,7 @@ ns.Filger_Spells = {
 			Interval = 4,
 			Opacity = 1,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
 
 			-- Beacon of Light/Flamme des Glaubens
 			{ spellID = 53563, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -425,7 +425,7 @@ ns.Filger_Spells = {
 			Interval = 4,
 			Opacity = 1,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -146 },
 
 			-- Beacon of Light/Flamme des Glaubens
 			{ spellID = 53563, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
@@ -435,7 +435,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Judgements of the Pure
 			{ spellID = 53671, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -455,7 +455,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Hammer of Justice/Hammer der Gerechtigkeit
 			{ spellID = 853, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -476,7 +476,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Hammer of Justice/Hammer der Gerechtigkeit
 			{ spellID = 853, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -488,7 +488,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, 24 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
 
 			-- Prayer of Mending/Gebet der Besserung
 			{ spellID = 41637, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -512,7 +512,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 24 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -146 },
 
 			-- Prayer of Mending/Gebet der Besserung
 			{ spellID = 41637, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
@@ -532,7 +532,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Surge of Light
 			{ spellID = 33151, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
@@ -556,7 +556,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Shackle undead
 			{ spellID = 9484, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -575,7 +575,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Shackle undead
 			{ spellID = 9484, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -589,7 +589,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			--Devious Minds/Teuflische Absichten
 			{ spellID = 70840, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -615,7 +615,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Fear
 			{ spellID = 5782, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -660,7 +660,7 @@ ns.Filger_Spells = {
 			IconSide = "RIGHT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Fear
 			{ spellID = 5782, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -674,7 +674,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Sprint
 			{ spellID = 2983, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -700,7 +700,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Cheap shot
 			{ spellID = 1833, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
@@ -735,7 +735,7 @@ ns.Filger_Spells = {
 			IconSide = "LEFT",
 			Interval = 4,
 			Mode = "BAR",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, 100 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, 100 },
 
 			-- Blind
 			{ spellID = 2094, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
@@ -749,7 +749,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -20 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
 			-- Blood Shield/Blutschild
 			{ spellID = 77513, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
@@ -777,7 +777,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -20 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -190 },
 
 			-- Strangulate/Strangulieren
 			{ spellID = 47476, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
@@ -799,7 +799,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -139 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -233 },
 
 			-- Geisterstunde/Witching Hour
 			{ spellID = 90887, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -832,7 +832,7 @@ ns.Filger_Spells = {
 			Direction = "LEFT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "RIGHT", UIParent, "CENTER", -160, -83 },
+			setPoint = { "RIGHT", UIParent, "CENTER", -198, -90 },
 
 			-- Death Knight
 			-- Gnaw (Ghoul)
@@ -1119,7 +1119,7 @@ ns.Filger_Spells = {
 			Direction = "RIGHT",
 			Interval = 4,
 			Mode = "ICON",
-			setPoint = { "LEFT", UIParent, "CENTER", 160, -83 },
+			setPoint = { "LEFT", UIParent, "CENTER", 198, -90 },
 
 			-- Aspect of the Pack
 			{ spellID = 13159, size = 72, unitId = "player", caster = "player", filter = "BUFF" },
