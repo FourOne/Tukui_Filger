@@ -491,7 +491,7 @@ ns.Filger_Spells = {
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -146 },
 
 			-- Prayer of Mending/Gebet der Besserung
-			{ spellID = 41637, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 41635, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Guardian Spirit/Schutzgeist
 			{ spellID = 47788, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Pain Suppression/Schmerzunterdrückung
@@ -506,6 +506,14 @@ ns.Filger_Spells = {
 			{ spellID = 6346, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Inner Fire/Inneres Feuer
 			{ spellID = 588, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Innerer Wille
+			{ spellID = 73413, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Erzengel
+			{ spellID = 81700, size = 34, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Dunkler Erzengel
+			{ spellID = 87153, size = 34, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Machterfüllte Schatten
+			{ spellID = 95799, size = 34, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_BUFF_ICON",
@@ -515,17 +523,23 @@ ns.Filger_Spells = {
 			setPoint = { "LEFT", UIParent, "CENTER", 198, -146 },
 
 			-- Prayer of Mending/Gebet der Besserung
-			{ spellID = 41637, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 41635, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Guardian Spirit/Schutzgeist
-			{ spellID = 47788, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 47788, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Pain Suppression/Schmerzunterdrückung
-			{ spellID = 33206, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 33206, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Power Word: Shield/Machtwort: Schild
 			{ spellID = 17, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Renew/Erneuerung
 			{ spellID = 139, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Fear Ward/Furchtzauberschutz
 			{ spellID = 6346, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
+			-- Echo des lichts
+			{ spellID = 77489, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			-- Inspiration
+			{ spellID = 15357, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			-- Barmherzigkeit
+			{ spellID = 77613, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "P_PROC_ICON",
@@ -534,22 +548,28 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -190 },
 
-			-- Surge of Light
-			{ spellID = 33151, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
-			-- Serendipity
-			{ spellID = 63730, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Shadow Weaving
-			--{ spellID = 15258, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Improved Spirit Tap
-			-- { spellID = 59000, size = 37, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Surge of Light / Woge des Lichts
+			{ spellID = 88688, size = 47, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Serendipity / Glücksfall
+			{ spellID = 63735, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Shadow Orb
 			{ spellID = 77487, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Archangel
-			{ spellID = 81700, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Evangelism
+			-- dunkler prediger
+			{ spellID = 87118, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Evangelism / Prediger
 			{ spellID = 81661, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Dispersion
 			{ spellID = 47585, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Chakra: Epiphani
+			{ spellID = 81208, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Chakre: Refugium
+			{ spellID = 81206, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Gesang des Herzens
+			{ spellID = 74224, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Läuternde Tränen
+			{ spellID = 91139, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Dunkles Glühen
+			{ spellID = 75173, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -1065,6 +1085,8 @@ ns.Filger_Spells = {
 			{ spellID = 92879, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Engulfing Magic/Einhüllende Magie (Valiona & Theralion)
 			{ spellID = 86631, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			--Twilight Meteorite
+			{ spellID = 74792, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Waterlogged/Wasserdurchtränkt (Twilight Ascendant Council)
 			{ spellID = 82762, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Burning Blood/Brennendes Blut (Twilight Ascendant Council)
@@ -1095,6 +1117,8 @@ ns.Filger_Spells = {
 			{ spellID = 91923, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Lightning Conductor (Omnitron Defense System)
 			{ spellID = 91433, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Shadow Infusion/Schattenmacht (Omnitron Defense System)
+			{ spellID = 92048, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Flash Freeze/Blitzeis (Maloriak)
 			{ spellID = 77699, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Consuming Flames/Verzehrende Flammen (Maloriak)
