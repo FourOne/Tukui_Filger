@@ -509,11 +509,11 @@ ns.Filger_Spells = {
 			-- Innerer Wille
 			{ spellID = 73413, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Erzengel
-			{ spellID = 81700, size = 34, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 81700, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Dunkler Erzengel
-			{ spellID = 87153, size = 34, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 87153, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Machterfüllte Schatten
-			{ spellID = 95799, size = 34, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 95799, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_BUFF_ICON",
@@ -525,9 +525,9 @@ ns.Filger_Spells = {
 			-- Prayer of Mending/Gebet der Besserung
 			{ spellID = 41635, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Guardian Spirit/Schutzgeist
-			{ spellID = 47788, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 47788, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Pain Suppression/Schmerzunterdrückung
-			{ spellID = 33206, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 33206, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Power Word: Shield/Machtwort: Schild
 			{ spellID = 17, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Renew/Erneuerung
@@ -535,11 +535,11 @@ ns.Filger_Spells = {
 			-- Fear Ward/Furchtzauberschutz
 			{ spellID = 6346, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Echo des lichts
-			{ spellID = 77489, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 77489, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Inspiration
-			{ spellID = 15357, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 15357, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 			-- Barmherzigkeit
-			{ spellID = 77613, size = 37, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 77613, size = 32, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "P_PROC_ICON",
