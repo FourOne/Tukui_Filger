@@ -44,7 +44,7 @@ local function OnUpdate(self, elapsed)
 	end
 end
 
-function Update(self)
+local function Update(self)
 	local id = self.Id
 	if (not bars[id]) then
 		bars[id] = {}
@@ -285,6 +285,7 @@ if (Filger_Spells and Filger_Spells[class]) then
 		frame:Point(unpack(data.setPoint))
 
 		if (f_s.configmode) then
+			local spellIcon
 			for j = 1, #Filger_Spells[class][i], 1 do
 				data = Filger_Spells[class][i][j]
 				if (not active[i]) then
@@ -293,9 +294,9 @@ if (Filger_Spells and Filger_Spells[class]) then
 				if (data.spellID) then
 					_, _, spellIcon = GetSpellInfo(data.spellID)
 				else
-					slotLink = GetInventoryItemLink("player", data.slotID)
+					local slotLink = GetInventoryItemLink("player", data.slotID)
 					if (slotLink) then
-						name, _, _, _, _, _, _, _, _, spellIcon = GetItemInfo(slotLink)
+						_, _, _, _, _, _, _, _, _, spellIcon = GetItemInfo(slotLink)
 					end
 				end
 				table.insert(active[i], { data = data, icon = spellIcon, count = 9, duration = 0, expirationTime = 0 })
