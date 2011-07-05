@@ -500,7 +500,7 @@ ns.Filger_Spells = {
 			{ spellID = 6346, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Inner Fire / Inneres Feuer
 			{ spellID = 588, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Innerer Wille
+			-- Inner Will / Innerer Wille
 			{ spellID = 73413, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Archangel / Erzengel
 			{ spellID = 81700, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
@@ -548,22 +548,18 @@ ns.Filger_Spells = {
 			{ spellID = 63735, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Shadow Orb / Schattenkugeln
 			{ spellID = 77487, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Dark Evangelism / Dunkler Prediger
-			{ spellID = 87118, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Evangelism / Prediger
 			{ spellID = 81661, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Dark Evangelism / Dunkler Prediger
+			{ spellID = 87118, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Dispersion / Dispersion
 			{ spellID = 47585, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Chakra: Serenity / Chakra: Epiphanie
 			{ spellID = 81208, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Chakra: Sanctuary / Chakra: Refugium
 			{ spellID = 81206, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Heartsong / Gesang des Herzens
-			{ spellID = 74224, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Cleansing Tears / Läuternde Tränen
-			{ spellID = 91139, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Darkglow / Dunkles Glühen
-			{ spellID = 75173, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Chakra: Chastise / Chakra: Züchtigung
+			{ spellID = 81209, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -816,6 +812,8 @@ ns.Filger_Spells = {
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -233 },
 
 		-- Trinket Procs
+			-- Cleansing Tears / Läuternde Tränen (Tear of Blood)
+			{ spellID = 91139, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Fury of the Five Flights / Furor der fünf Schwärme
 			{ spellID = 60314, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Witching Hour / Geisterstunde 
