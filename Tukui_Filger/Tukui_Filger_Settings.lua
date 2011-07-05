@@ -1105,8 +1105,10 @@ ns.Filger_Spells = {
 			{ spellID = 92879, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Engulfing Magic / Einhüllende Magie (Valiona & Theralion)
 			{ spellID = 86631, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Twilight Meteorite
-			{ spellID = 74792, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Twilight Meteorite / Zwielichtmeteorit (Valiona & Theralion)
+			{ spellID = 86013, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Malevolent Strikes / Bösartige Stöße (Halfus Wyrmbreaker)
+			{ spellID = 39171, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Waterlogged / Wasserdurchtränkt (Twilight Ascendant Council)
 			{ spellID = 82762, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Burning Blood / Brennendes Blut (Twilight Ascendant Council)
