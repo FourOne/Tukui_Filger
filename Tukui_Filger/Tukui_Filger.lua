@@ -44,7 +44,7 @@ local function OnUpdate(self, elapsed)
 	end
 end
 
-function Update(self)
+local function Update(self)
 	local id = self.Id
 	if (not bars[id]) then
 		bars[id] = {}
@@ -268,7 +268,40 @@ if (Filger_Spells and Filger_Spells[class]) then
 			Filger_Spells[index] = nil
 		end
 	end
-	local data, frame
+
+	local idx, data, frame = {}
+	for i = 1, #Filger_Spells[class], 1 do
+		local jdx, spn = {}
+		data = Filger_Spells[class][i]
+
+		for j = 1, #data, 1 do
+			if (data[j].spellID) then
+					spn = GetSpellInfo(data[j].spellID)
+			else
+					local slotLink = GetInventoryItemLink("player", data[j].slotID);
+					if (slotLink) then
+						spn = GetItemInfo(slotLink)
+					end
+			end
+
+			if (not spn) then
+				print("Filger: WARNING - BAD spell/slot ID -> ".. data[j].spellID .."!")
+				table.insert(jdx, j)
+			end
+		end
+		for _, v in ipairs(jdx) do
+			table.remove(data, v)
+		end
+
+		if (#data == 0) then
+			print("Filger: WARNING - EMPTY section -> "..data.Name.."!")
+			table.insert(idx, i)
+		end
+	end
+	for _, v in ipairs(idx) do
+		table.remove(Filger_Spells[class], v)
+	end
+
 	for i = 1, #Filger_Spells[class], 1 do
 		data = Filger_Spells[class][i]
 
@@ -285,6 +318,7 @@ if (Filger_Spells and Filger_Spells[class]) then
 		frame:Point(unpack(data.setPoint))
 
 		if (f_s.configmode) then
+			local spellIcon
 			for j = 1, #Filger_Spells[class][i], 1 do
 				data = Filger_Spells[class][i][j]
 				if (not active[i]) then
@@ -293,9 +327,9 @@ if (Filger_Spells and Filger_Spells[class]) then
 				if (data.spellID) then
 					_, _, spellIcon = GetSpellInfo(data.spellID)
 				else
-					slotLink = GetInventoryItemLink("player", data.slotID)
+					local slotLink = GetInventoryItemLink("player", data.slotID)
 					if (slotLink) then
-						name, _, _, _, _, _, _, _, _, spellIcon = GetItemInfo(slotLink)
+						_, _, _, _, _, _, _, _, _, spellIcon = GetItemInfo(slotLink)
 					end
 				end
 				table.insert(active[i], { data = data, icon = spellIcon, count = 9, duration = 0, expirationTime = 0 })
