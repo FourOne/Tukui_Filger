@@ -4,7 +4,12 @@
 ## Author: Nils Ruesch, Affli
 ## Editor: FourOne
 ## Credits: Nils Ruesch, Shestak, Affli, Garagar, hidekki
+<<<<<<< HEAD
 ## Version: 3.06
+=======
+## Version: 3.05
+## Build: 305001
+>>>>>>> e65838c296b251a7c6487ae2daffc84512a08eb9
 ## RequiredDeps: Tukui
 
 Tukui_Filger_Settings.lua
