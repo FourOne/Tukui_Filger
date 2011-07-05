@@ -1139,12 +1139,10 @@ ns.Filger_Spells = {
 			{ spellID = 93279, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
 		-- Firelands
-			-- Magma Rupture (Shannox)
-			{ spellID = 99840, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Crystal Prison Trap (Shannox)
-			{ spellID = 99837, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Jagged Tear (Shannox)
-			{ spellID = 99936, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Melt Armor (Trash)
+			{ spellID = 99532, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- The Widow's Kiss (Beth'tilac)
+			{ spellID = 99476, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Eruption (Lord Rhyolith)
 			{ spellID = 98492, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Molten Feather (Alysrazor)
@@ -1155,17 +1153,21 @@ ns.Filger_Spells = {
 			{ spellID = 99461, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Alysra's Razor (Alysrazor)
 			{ spellID = 100029, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- The Widow's Kiss (Beth'tilac)
-			{ spellID = 99506, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Magma Rupture (Shannox)
+			{ spellID = 99840, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Crystal Prison Trap (Shannox)
+			{ spellID = 99837, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Jagged Tear (Shannox)
+			{ spellID = 99937, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Torment (Baleroc)
 			{ spellID = 99256, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Tormented (Baleroc)
 			{ spellID = 99257, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Blaze of Glory (Baleroc)
 			{ spellID = 99252, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
-			-- Vital Flame (Baleroc)
-			{ spellID = 99262, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Vital Spark (Baleroc)
+			{ spellID = 99262, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Vital Flame (Baleroc)
 			{ spellID = 99263, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Searing Seeds (Majordomo Staghelm)
 			{ spellID = 98450, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
@@ -1174,7 +1176,7 @@ ns.Filger_Spells = {
 			-- Blazing Heat (Ragnaros)
 			{ spellID = 100460, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Burning Wound (Ragnaros)
-			{ spellID = 101239, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 99399, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 		},
 		{
 			Name = "PVP_T_BUFF_ICON",
