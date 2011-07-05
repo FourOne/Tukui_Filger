@@ -439,10 +439,12 @@ ns.Filger_Spells = {
 
 			-- Judgements of the Pure / Richturteile des Reinen
 			{ spellID = 53671, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Judgements of the Just / Richturteil des Gerechten
+			{ spellID = 68055, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Holy Shield / Heiliger Schild
 			{ spellID = 20925, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Infusion of Light / Lichtenergie
-			{ spellID = 54149, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 53672, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Divine Plea / Göttliche Bitte
 			{ spellID = 54428, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Essence of Life / Essenz des Lebens
@@ -461,14 +463,6 @@ ns.Filger_Spells = {
 			{ spellID = 853, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Judgement / Richturteil
 			{ spellID = 20271, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Judgement of Justice
-			--{ spellID = 53407, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Judgement of Wisdom
-			--{ spellID = 20186, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Heart of the Crusader
-			--{ spellID = 54499, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Blood Corruption
-			--{ spellID = 53742, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 		},
 		{
 			Name = "F/DEBUFF_BAR",
