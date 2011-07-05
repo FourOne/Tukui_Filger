@@ -821,23 +821,45 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -233 },
 
-			-- Geisterstunde / Witching Hour
+		-- Trinket Procs
+			-- Witching Hour / Geisterstunde 
 			{ spellID = 90887, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Erkenntnis des Herzens / Heart's Revelation
+			-- Heart's Revelation / Erkenntnis des Herzens
 			{ spellID = 91027, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Richturteil des Herzens / Heart's Judgement
+			-- Heart's Judgement / Richturteil des Herzens
 			{ spellID = 91041, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
+		-- Item Enchants - Engineering
 			-- Hyperspeed Accelerators / Hypergeschwindigkeitsbeschleuniger
 			{ spellID = 54758, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Synapse Springs / Synapsenfedern
 			{ spellID = 82175, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
-			-- Speed / Geschwindigkeit
-			{ spellID = 53908, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Wild Magic / Wilde Magie
-			{ spellID = 53909, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+		-- Item Enchants - Tailoring
+			-- Darkglow / Dunkles Glühen
+			{ spellID = 55767, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Lightweave / Leuchtgarn
+			{ spellID = 55637, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Swordguard / Schwertwallgarn
+			{ spellID = 55775, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 
+		-- Item Enchants - Enchanting
+			-- Heartsong / Gesang des Herzens
+			{ spellID = 74224, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Avalanche / Lawine
+			{ spellID = 74196, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Hurricane / Hurrikan
+			{ spellID = 74221, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+
+		-- Potions
+			-- Speed / Geschwindigkeit - Potion of Speed
+			{ spellID = 53908, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Wild Magic / Wilde Magie - Potion of Wild Magic
+			{ spellID = 53909, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Earthen Armor / Irdene Rüstung - Earthen Potion
+			{ spellID = 79475, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
+
+		-- External Buffs
 			-- Tricks of the Trade / Schurkenhandel
 			{ spellID = 57934, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Power Infusion / Seele der Macht
@@ -846,6 +868,10 @@ ns.Filger_Spells = {
 			{ spellID = 2825, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
 			-- Heroism / Heldentum
 			{ spellID = 32182, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Time Warp / Zeitkrümmung
+			{ spellID = 80353, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Ancient Hysteria / Uralte Hysterie (Core Hound)
+			{ spellID = 90355, size = 32, unitId = "player", caster = "all", filter = "BUFF" },
 		},
 		{
 			Name = "PVE/PVP_P_DEBUFF_ICON",
