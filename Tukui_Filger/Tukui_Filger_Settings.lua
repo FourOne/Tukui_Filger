@@ -604,20 +604,20 @@ ns.Filger_Spells = {
 			-- Devious Minds / Teuflische Absichten
 			{ spellID = 70840, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Improved Soul Fire / Verbessertes Seelenfeuer
-			{ spellID = 85114, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 85383, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Molten Core / Geschmolzener Kern
 			{ spellID = 47383, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Decimation / Dezimierung
-			{ spellID = 63158, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 63165, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Backdraft / Pyrolyse
-			{ spellID = 54277, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Backlasha / Heimzahlen
-			{ spellID = 34939, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 54274, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Backlash / Heimzahlen
+			{ spellID = 34936, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Nether Protection / Netherschutz
-			{ spellID = 30301, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 30299, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Nightfall / Einbruch der Nacht
-			{ spellID = 18095, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Burning Soul / Brennende Seele
+			{ spellID = 18094, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			-- Soulburn / Seelenbrand
 			{ spellID = 74434, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
