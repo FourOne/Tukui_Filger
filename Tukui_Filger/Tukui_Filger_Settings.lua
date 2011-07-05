@@ -854,7 +854,7 @@ ns.Filger_Spells = {
 			Mode = "ICON",
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -90 },
 
-			-- Death Knight
+		-- Death Knight
 			-- Gnaw (Ghoul)
 			{ spellID = 47481, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Strangulate
@@ -870,7 +870,7 @@ ns.Filger_Spells = {
 			-- Hungering Cold
 			{ spellID = 51209, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Druid
+		-- Druid
 			-- Cyclone
 			{ spellID = 33786, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Hibernate
@@ -888,7 +888,7 @@ ns.Filger_Spells = {
 			-- Infected Wounds
 			{ spellID = 58179, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Hunter
+		-- Hunter
 			-- Freezing Trap Effect
 			{ spellID = 3355, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Freezing Arrow Effect
@@ -934,7 +934,7 @@ ns.Filger_Spells = {
 			-- Tendon Rip (Hyena)
 			{ spellID = 51209, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Mage
+		-- Mage
 			-- Dragon's Breath
 			{ spellID = 31661, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Polymorph
@@ -956,7 +956,7 @@ ns.Filger_Spells = {
 			-- Slow
 			{ spellID = 31589, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Paladin
+		-- Paladin
 			-- Repentance
 			{ spellID = 20066, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Turn Evil
@@ -972,7 +972,7 @@ ns.Filger_Spells = {
 			-- Avenger's Shield
 			{ spellID = 31935, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Priest
+		-- Priest
 			-- Psychic Horror
 			{ spellID = 64058, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Mind Control
@@ -986,7 +986,7 @@ ns.Filger_Spells = {
 			-- Mind Flay
 			{ spellID = 15407, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Rogue
+		-- Rogue
 			-- Dismantle
 			{ spellID = 51722, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Blind
@@ -1010,7 +1010,7 @@ ns.Filger_Spells = {
 			-- Deadly Throw
 			{ spellID = 26679, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Shaman
+		-- Shaman
 			-- Hex
 			{ spellID = 51514, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Earthgrab
@@ -1024,7 +1024,7 @@ ns.Filger_Spells = {
 			-- Frost Shock
 			{ spellID = 8056, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Warlock
+		-- Warlock
 			-- Banish
 			{ spellID = 710, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Death Coil
@@ -1046,7 +1046,7 @@ ns.Filger_Spells = {
 			-- Curse of Exhaustion
 			{ spellID = 18223, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Warrior
+		-- Warrior
 			-- Intimidating Shout
 			{ spellID = 20511, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Disarm
@@ -1072,15 +1072,15 @@ ns.Filger_Spells = {
 			-- Piercing Howl
 			{ spellID = 12323, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Racials
+		-- Racials
 			-- War Stomp
 			{ spellID = 20549, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Baradin Hold(PvP)
+		-- Baradin Hold(PvP)
 			-- Meteor Slash / Meteorschlag (Argaloth)
 			{ spellID = 88942, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Bastion of Twilight
+		-- Bastion of Twilight
 			-- Blackout / Blackout (Valiona & Theralion)
 			{ spellID = 92879, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Engulfing Magic / Einhüllende Magie (Valiona & Theralion)
@@ -1108,7 +1108,7 @@ ns.Filger_Spells = {
 			-- Corruption: Sickness / Verderbnis: Krankheit (Cho'gall)
 			{ spellID = 93200, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Blackwing Descent
+		-- Blackwing Descent
 			-- Constricting Chains / Fesselnde Ketten (Magmaw)
 			{ spellID = 91911, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Parasitic Infection / Parasitäre Infektion (Magmaw)
@@ -1128,7 +1128,7 @@ ns.Filger_Spells = {
 			-- Shadow Conductor / Schattenleiter (Nefarian)
 			{ spellID = 92053, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
-			-- Throne of Four Winds
+		-- Throne of Four Winds
 			-- Wind Chill / Windkühle (Conclave of Wind)
 			{ spellID = 93123, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Slicing Gale / Schneidender Orkan (Conclave of Wind)
@@ -1137,6 +1137,44 @@ ns.Filger_Spells = {
 			{ spellID = 87873, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Acid Rain / Säureregen (Al'Akir)
 			{ spellID = 93279, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+
+		-- Firelands
+			-- Magma Rupture (Shannox)
+			{ spellID = 99840, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Crystal Prison Trap (Shannox)
+			{ spellID = 99837, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Jagged Tear (Shannox)
+			{ spellID = 99936, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Eruption (Lord Rhyolith)
+			{ spellID = 98492, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Molten Feather (Alysrazor)
+			{ spellID = 97128, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Wings of Flame (Alysrazor)
+			{ spellID = 98619, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Blazing Power (Alysrazor)
+			{ spellID = 99461, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Alysra's Razor (Alysrazor)
+			{ spellID = 100029, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- The Widow's Kiss (Beth'tilac)
+			{ spellID = 99506, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Torment (Baleroc)
+			{ spellID = 99256, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Tormented (Baleroc)
+			{ spellID = 99257, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Blaze of Glory (Baleroc)
+			{ spellID = 99252, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Vital Flame (Baleroc)
+			{ spellID = 99262, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Vital Spark (Baleroc)
+			{ spellID = 99263, size = 72, unitId = "player", caster = "all", filter = "BUFF" },
+			-- Searing Seeds (Majordomo Staghelm)
+			{ spellID = 98450, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Burning Orbs (Majordomo Staghelm)
+			{ spellID = 98451, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Blazing Heat (Ragnaros)
+			{ spellID = 100460, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			-- Burning Wound (Ragnaros)
+			{ spellID = 101239, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 		},
 		{
 			Name = "PVP_T_BUFF_ICON",
