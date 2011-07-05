@@ -153,24 +153,20 @@ ns.Filger_Spells = {
 
 			-- Lock and Load / Sichern und Laden
 			{ spellID = 56342, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Fury of the Five Flights / Furor der fünf Schwärme
-			{ spellID = 60314, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Quick Shots / Schnelle Schüsse
-			--{ spellID = 6150, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 6150, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Master Tactician / Meister der Taktik
 			{ spellID = 34837, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Improved Steady Shot / Verbesserter zuverlässiger Schuss
 			{ spellID = 53224, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Expose Weakness / Schwäche aufdecken
-			--{ spellID = 23578, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Rapid Fire / Schnellfeuer
 			{ spellID = 3045, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
-			-- Call of the Wild / Ruf der Wildnis
-			{ spellID = 53434, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Mend Pet / Tier heilen
 			{ spellID = 136, size = 47, unitId = "pet", caster = "player", filter = "BUFF" },
 			-- Feed Pet / Tier füttern
 			{ spellID = 6991, size = 47, unitId = "pet", caster = "player", filter = "BUFF" },
+			-- Call of the Wild / Ruf der Wildnis
+			{ spellID = 53434, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -822,6 +818,8 @@ ns.Filger_Spells = {
 			setPoint = { "RIGHT", UIParent, "CENTER", -198, -233 },
 
 		-- Trinket Procs
+			-- Fury of the Five Flights / Furor der fünf Schwärme
+			{ spellID = 60314, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Witching Hour / Geisterstunde 
 			{ spellID = 90887, size = 32, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Heart's Revelation / Erkenntnis des Herzens
