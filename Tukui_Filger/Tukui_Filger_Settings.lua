@@ -371,7 +371,7 @@ ns.Filger_Spells = {
 			-- Tidal Waves / Flutwellen
 			{ spellID = 51562, size = 47, unitId = "player", caster = "player", filter = "BUFF" },
 			-- Ancestral Fortitude / Seelenstärke der Ahnen
-			{ spellID = 16236, size = 47, unitId = "target", caster = "player", filter = "BUFF" },
+			{ spellID = 16177, size = 47, unitId = "target", caster = "player", filter = "BUFF" },
 		},
 		{
 			Name = "T_DEBUFF_ICON",
