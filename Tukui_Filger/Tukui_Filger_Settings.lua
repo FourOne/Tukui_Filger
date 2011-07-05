@@ -382,6 +382,8 @@ ns.Filger_Spells = {
 
 			-- Hex / Verhexen
 			{ spellID = 51514, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Bind Elemental / Elementar binden
+			{ spellID = 76780, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Storm Strike / Sturmschlag
 			{ spellID = 17364, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Earth Shock / Erdschock
@@ -401,6 +403,8 @@ ns.Filger_Spells = {
 
 			-- Hex / Verhexen
 			{ spellID = 51514, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
+			-- Bind Elemental / Elementar binden
+			{ spellID = 76780, size = 32, barWidth = 200, unitId = "focus", caster = "all", filter = "DEBUFF" },
 		},
 	},
 	["PALADIN"] = {
