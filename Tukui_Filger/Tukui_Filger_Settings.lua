@@ -868,7 +868,7 @@ ns.Filger_Spells = {
 			-- Icy Clutch (Chilblains)
 			--{ spellID = 50436, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Hungering Cold
-			{ spellID = 51209, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 49203, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
 		-- Druid
 			-- Cyclone
@@ -930,9 +930,9 @@ ns.Filger_Spells = {
 			-- Web (Spider)
 			{ spellID = 4167, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Froststorm Breath (Chimera)
-			{ spellID = 51209, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 92380, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 			-- Tendon Rip (Hyena)
-			{ spellID = 51209, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
+			{ spellID = 50271, size = 72, unitId = "player", caster = "all", filter = "DEBUFF" },
 
 		-- Mage
 			-- Dragon's Breath
