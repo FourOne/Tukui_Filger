@@ -310,19 +310,19 @@ ns.Filger_Spells = {
 			{ spellID = 94009, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Sunder Armor /Rüstung zerreiße
 			{ spellID = 7386, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Expose Armor / Rüstung schwächen
-			--{ spellID = 48669, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
 			-- Thunder Clap / Donnerknall
 			{ spellID = 6343, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Infected Wounds / Infizierte Wunden
-			{ spellID = 48484, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Frost Fever / Frostfieber
-			{ spellID = 55095, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 			-- Demoralizing Shout / Demoralisierender Ruf
 			{ spellID = 1160, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
-			-- Demoralizing Roar / Demoralisierendes Gebrüll
+			-- Expose Armor / Rüstung schwächen (Rogue)
+			{ spellID = 8647, size = 47, unitId = "target", caster = "player", filter = "DEBUFF" },
+			-- Infected Wounds / Infizierte Wunden (Druid)
+			{ spellID = 48484, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Frost Fever / Frostfieber (Death Knight)
+			{ spellID = 55095, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
+			-- Demoralizing Roar / Demoralisierendes Gebrüll (Druid)
 			{ spellID = 99, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
-			-- Curse of Weakness / Fluch der Schwäche
+			-- Curse of Weakness / Fluch der Schwäche (Warlock)
 			{ spellID = 702, size = 47, unitId = "target", caster = "all", filter = "DEBUFF" },
 		},
 	},
