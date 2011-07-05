@@ -5,7 +5,6 @@
 ## Editor: FourOne
 ## Credits: Nils Ruesch, Shestak, Affli, Garagar, hidekki
 ## Version: 3.06
-## Build: 305001
 ## RequiredDeps: Tukui
 
 Tukui_Filger_Settings.lua
