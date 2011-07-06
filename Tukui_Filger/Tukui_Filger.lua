@@ -21,6 +21,7 @@ local MyUnits = {
     pet = true,
 }
 
+local Update
 local function OnUpdate(self, elapsed)
 	local time = self.filter == "CD" and (self.expirationTime + self.duration - GetTime()) or (self.expirationTime - GetTime())
 	if (self:GetParent().Mode == "BAR") then
@@ -44,7 +45,7 @@ local function OnUpdate(self, elapsed)
 	end
 end
 
-local function Update(self)
+function Update(self)
 	local id = self.Id
 	if (not bars[id]) then
 		bars[id] = {}
