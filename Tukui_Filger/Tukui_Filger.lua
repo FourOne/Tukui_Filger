@@ -6,7 +6,7 @@
 
 ]]
 
-local T, C, L = unpack(Tukui) -- Import: T - functions, constants, variables; C - config; L - locales
+local T, C, L = unpack(Tukui) -- Important: T - functions, constants, variables; C - config; L - locales
 
 local _, ns = ...
 local f_s = ns.Filger_Settings;
